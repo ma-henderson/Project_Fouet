@@ -1,0 +1,94 @@
+.container {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%
+}
+
+h1 {
+    padding-top: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+#how-it-works{
+    background-color: rgb(226, 226, 226);
+    /* background-image: url("../img/div-banner.jpg"); */
+    background-size: cover;
+}
+
+.row {
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: center;
+}
+
+.flow-img{
+    width: 40%;
+    padding: 0.5em;
+}
+.flow-num{
+    float: left;
+    width: 15%;
+    padding-top: 5px;
+    padding-right: 2px; 
+    left: 0px;
+}
+
+nav .navbar-brand {
+    float:left;
+}
+
+.banner {
+    position: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.fa-leaf{
+    color: darkgreen;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+}
+.fa-utensils{
+    color: darkslategrey;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.fa-home{
+    color:rgb(152, 41, 15);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+.fas:last-child{
+    padding-right: 0.8em;
+}
+
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 100%}
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 100%}
+}
+    .navbar-brand.abs
+    {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        text-align: center;
+    }
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 100%}
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 100%}
+}
