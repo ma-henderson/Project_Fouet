@@ -11,10 +11,23 @@ h1 {
     margin-bottom: 1em;
     text-align: center;
 }
+
 #how-it-works{
     background-color: rgb(226, 226, 226);
     /* background-image: url("../img/div-banner.jpg"); */
     background-size: cover;
+    font-family: 'Gilda Display', serif;
+}
+
+#how-it-works h1{
+    font-family: 'Marko One', serif;;
+}
+
+.nav-logo{
+    float: left;
+    max-height: 1.6em;
+    border-radius: 100%;
+    margin-right: 0.8em;
 }
 
 .row {
@@ -37,6 +50,7 @@ h1 {
 
 nav .navbar-brand {
     float:left;
+    font-family: 'Marko One', serif;
 }
 
 .banner {
