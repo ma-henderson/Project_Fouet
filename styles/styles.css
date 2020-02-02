@@ -6,22 +6,100 @@
     width: 100%
 }
 
-h1 {
-    padding-top: 0.5em;
-    margin-bottom: 1em;
-    text-align: center;
+
+    /** Button Style **/
+.reg-button {
+/** Font Style **/
+    /* font-family: 'Marko One', serif; */
+    color:#fff !important;
+text-decoration:none;
+    font-weight:bold;
+    text-shadow:rgba(0, 0, 0, 0.30) 0 -1.25px 0;
+
+/** Button Style **/ 
+display:-moz-inline-stack;
+-webkit-font-smoothing:antialiased;
+    display:inline-block;
+    vertical-align:middle;
+    vertical-align:auto;
+    zoom:1;
+    margin-top: 5px;
+    border:1px solid #2f6428;
+    background: #2f6428;
+    padding:2px 8px 5px 8px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
+    -moz-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
+    box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
 }
 
-#how-it-works{
-    background-color: rgb(226, 226, 226);
-    /* background-image: url("../img/div-banner.jpg"); */
-    background-size: cover;
-    font-family: 'Gilda Display', serif;
+/** Active State Style **/
+.reg-button:active {
+    border-color:#083559;
+    -webkit-box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    -moz-box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+}
+  
+/** Button Style **/
+.log-button {
+/** Font Style **/
+    /* font-family: 'Marko One', serif; */
+    color:#2f6428 !important;
+text-decoration:none;
+    font-weight:bold;
+    text-shadow:rgba(252, 252, 252, 0.411) 0 -1.25px 0;
+
+/** Button Style **/ 
+display:-moz-inline-stack;
+-webkit-font-smoothing:antialiased;
+    display:inline-block;
+    vertical-align:middle;
+    vertical-align:auto;
+    zoom:1;
+    margin-top: 5px;
+    border:1px solid #2f6428;
+    background: #2f642850;
+    padding:2px 8px 5px 8px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border-radius:3px;
+    -webkit-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
+    -moz-box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
+    box-shadow:rgba(255, 255, 255, 0.3) 0 1px 0, inset rgba(255, 255, 255, 0.3) 0 1px 0;
 }
 
-#how-it-works h1{
-    font-family: 'Marko One', serif;;
+/** Active State Style **/
+.log-button:active {
+    border-color:#083559;
+    -webkit-box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    -moz-box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
+    box-shadow:rgba(255, 255, 255, 0.2) 0 1px 0, inset rgba(0, 0, 0, 0.25) 0 1px 4px;
 }
+          
+
+/* .icon-inst{
+    border-radius: 50%;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+}
+.fa-instagram, .fa-facebook{
+    color: white;
+}
+.icon-fb{
+    vertical-align: middle;
+    background: #3B5998;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+    padding: 0;
+} */
 
 .nav-logo{
     float: left;
@@ -33,6 +111,22 @@ h1 {
 .row {
     margin-left: 8px;
     margin-right: 8px;
+    text-align: center;
+}
+
+#how-it-works{
+    background-color: rgb(226, 226, 226);
+    background-size: cover;
+    font-family: 'Gilda Display', serif;
+}
+
+#how-it-works h1{
+    font-family: 'Marko One', serif;
+}
+
+h1 {
+    padding-top: 0.5em;
+    margin-bottom: 1em;
     text-align: center;
 }
 
@@ -80,14 +174,31 @@ nav .navbar-brand {
 }
 
 
+@media (max-width: 576px) {
+    .log-button {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .reg-button {
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+    }
+    .flow-img{
+        width: 50%;
+        padding: 0.5em;
+    }
+    .container{
+        max-width: 100%}  
+}
+
 @media (min-width: 576px) {
     .container{
         max-width: 100%}
-}
 
+    }
 @media (min-width: 768px) {
     .container{
-        max-width: 100%}
+        max-width: 100%}    
 }
     .navbar-brand.abs
     {
