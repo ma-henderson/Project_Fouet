@@ -106,6 +106,7 @@ display:-moz-inline-stack;
     max-height: 1.6em;
     border-radius: 100%;
     margin-right: 0.8em;
+    min-width: 30px;
 }
 
 .row {
@@ -118,15 +119,16 @@ display:-moz-inline-stack;
     background-color: rgb(226, 226, 226);
     background-size: cover;
     font-family: 'Gilda Display', serif;
+    padding-bottom: 30px;
 }
 
-#how-it-works h1{
+h1{
     font-family: 'Marko One', serif;
 }
 
 h1 {
     padding-top: 0.5em;
-    margin-bottom: 1em;
+    margin-bottom: 0.75em;
     text-align: center;
 }
 
@@ -138,7 +140,7 @@ h1 {
     float: left;
     width: 15%;
     padding-top: 5px;
-    padding-right: 2px; 
+    padding-right: 3px; 
     left: 0px;
 }
 
@@ -147,31 +149,52 @@ nav .navbar-brand {
     font-family: 'Marko One', serif;
 }
 
+.navbar{
+    background-image: url(../img/nav-bg.jpg);
+    
+}
+
 .banner {
     position: center;
     width: 100%;
     height: auto;
-
 }
 
-.fa-leaf{
-    color: darkgreen;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
+#about-us{
+    background: beige !important;
+    font-family: 'Gilda Display', serif !important;
+    padding-bottom: 0.5em;
 }
-.fa-utensils{
-    color: darkslategrey;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+
+#about-us ul{
+    list-style-type: none;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 3%;
 }
-.fa-home{
-    color:rgb(152, 41, 15);
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+
+#about-us h2{
+    font-weight: bold;
+    padding-top: 0.5em;
 }
-.fas:last-child{
-    padding-right: 0.8em;
+
+#about-us li{
+    width: 90%;
+    display: inline-block;
+    text-align: center;
 }
+
+img.framed {
+    width: 100%;
+    max-height: 350px;
+    display: inline-grid;
+    box-shadow:
+    -50px -50px 0 -40px #a7e09c,
+    50px 50px 0 -40px #a7e09c;
+}
+  
+  
 
 
 @media (max-width: 576px) {
@@ -191,10 +214,49 @@ nav .navbar-brand {
         max-width: 100%}  
 }
 
+@media (max-width: 650px) {
+#about-us ul{
+    list-style-type: none;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-left: 0;
+}
+
+#about-us h2{
+    font-weight: bold;
+    padding-top: 0.5em;
+}
+
+#about-us li{
+    width: 80%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 2.5em;
+}
+img.framed {
+    width: 80%;
+    max-height: 350px;
+    display: inline-grid;
+    box-shadow:
+    -50px -50px 0 -40px #a7e09c,
+    50px 50px 0 -40px #a7e09c;
+}
+
+.banner {
+    position: relative;
+    width: 649px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%)
+}
+
+}
+
 @media (min-width: 576px) {
     .container{
         max-width: 100%}
-
     }
 @media (min-width: 768px) {
     .container{
