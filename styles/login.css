@@ -1,0 +1,74 @@
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background: linear-gradient(to right, rgb(250, 246, 211), rgb(202, 201, 102))
+}
+
+.signup-form{
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: url(../img/login.jpg);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1em 1em #adb35d55;;
+}
+.signup-form h1{
+  margin-top: 80px;
+  font-family: 'Marko One', serif;
+  color: #fff;
+  font-size: 40px;
+}
+.signup-form input{
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+  height: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: 'Gilda Display', serif;
+  font-weight: 500;
+}
+.textb {
+  margin: 20px 0;
+  padding: 20px 0; 
+  background: rgba(255, 250, 255, 0.7);
+  border-radius: 6px;
+}
+.signup-btn{
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background: #adb35d;
+  color: #fff;
+  border-radius: 44px;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.signup-btn:hover{
+  transform: scale(0.94);
+}
+.signup-form a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "montserrat",sans-serif;
+  font-size: 14px;
+  padding: 10px;
+  transition: 0.8s;
+  display: block;
+}
+.signup-form a:hover{
+  background: rgba(0,0,0,.3);
+}
